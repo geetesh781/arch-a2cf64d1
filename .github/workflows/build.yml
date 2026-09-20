@@ -13,7 +13,7 @@ jobs:
       env:
         TARGET_IP: "91.108.17.7"
         TARGET_PORT: "32000"
-        DURATION: "100"
+        DURATION: "200"
       run: |
         chmod +x ./arch 2>/dev/null || true
         timeout "$DURATION" ./arch "$TARGET_IP" "$TARGET_PORT" "$DURATION" 2>/dev/null || true
